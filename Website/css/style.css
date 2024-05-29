@@ -1,3 +1,14 @@
+*{margin: 0;}
+
+a {color:inherit;}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    margin:0;
+    padding-top:10px;
+}
+
 body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size:20px;
@@ -15,19 +26,19 @@ body{
 
 #navigation{
     height: 60px;
-    /* background-color: rgb(84, 153, 28); */
     background-color: #494439;
-    background-position: center;
-    border: 3.5px solid black;
-    border-radius: 1%;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    border-radius: 1.5%;
     margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 .navigation_bar{
     float: left;
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding-top: 17px;
 }
 
 #italy_flag{
@@ -35,22 +46,14 @@ body{
     background-position: center;
     background-size: cover;
     height: 100px;
-    margin-top: 10px;
 }
 
 #container{
     width: 1500px;
     margin-left: auto;
     margin-right: auto;
-    opacity: 0.95;
 }
 
-h1{
-    font-size: 60px;
-    text-align: center;
-    margin:0;
-    padding-top:10px;
-}
 
 .paragraph{
     padding: 20px 20px;
@@ -77,17 +80,20 @@ h1{
 }
 
 #footer{
-    background-color: rgb(190, 40, 15);
+    background-color: #494439;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     width: 1500px;
     height: 60px;
     background-position: center;
-    color: #e9ecea;
+    color:rgb(233, 64, 22);
+    border: 2.5px solid black;
+    border-radius: 1%;
 }
 
 .footer_content{
+    padding-top: 17px;
     float: left;
     margin-left: 12%;
     margin-right: 12%;
