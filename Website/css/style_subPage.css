@@ -1,64 +1,114 @@
-*{margin: 0;}
+* {
+    margin: 0;
+}
 
-a {color:inherit;}
+a {
+    color: inherit;
+}
 
-h1{
+h1 {
     font-size: 60px;
     text-align: center;
-    margin:0;
-    padding-top:10px;
+    margin: 0;
+    padding-top: 10px;
     color: rgb(84, 153, 28);
 }
 
-h2{
-    float:left;
+h2 {
+    float: left;
     width: 400px;
     padding-left: 10%;
     color: #e9ecea;
     padding-bottom: 1%;
 }
 
-body{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size:20px;
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
     background-image: url(../img/jack-ward-rknrvCrfS1k-unsplash.jpg);
     background-size: cover;
 }
 
-#header{
+#header {
     height: 300px;
-    background-image:url(../img/rumman-amin-GA1g1FVzaes-unsplash.jpg);
+    background-image: url(../img/rumman-amin-GA1g1FVzaes-unsplash.jpg);
     background-size: 100%;
     background-position: center;
 }
 
-#navigation{
+#navigation {
     height: 60px;
     background-color: #494439;
     color: rgb(84, 153, 28);
     border-bottom: 3px solid black;
     border-left: 3px solid black;
     border-right: 3px solid black;
-    border-radius: 1.5%;
+    border-radius: 0px 0px 40px 40px;
     margin-bottom: 10px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.navigation_bar{
+.navigation_bar {
     float: left;
     margin-left: 7.5%;
     margin-right: 7.5%;
     padding-top: 17px;
 }
 
-#italy_flag{
+#italy_flag {
     background-image: url(../img/italy_flag.jpg);
     background-position: center;
     background-size: cover;
     height: 100px;
 }
 
-#container{
-    width: 1500px;
+#flex-container {
+    display: flex;
+    height: auto;
+    width: 50%;
+}
+
+.grid-container {
+    background-color: #494439;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'text1 picture1';
+    gap: 10px;
+    padding: 10px;
+}
+
+.item1 {
+    grid-area: header1;
+}
+.item2 {
+    grid-area: text1;
+}
+.item3 {
+    grid-area: picture1;
+}
+
+#footer {
+    background-color: #494439;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    width: 1500px;
+    height: 60px;
+    background-position: center;
+    color: rgb(233, 64, 22);
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.footer_content {
+    padding-top: 17px;
+    float: left;
+    margin-left: 12%;
+    margin-right: 12%;
 }
