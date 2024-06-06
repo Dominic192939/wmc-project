@@ -7,10 +7,7 @@ a {
 }
 
 h1 {
-    font-size: 60px;
-    text-align: center;
-    margin: 0;
-    padding-top: 10px;
+    font-size: 3.8rem;
     color: rgb(84, 153, 28);
 }
 
@@ -24,20 +21,22 @@ h2 {
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     background-image: url(../img/jack-ward-rknrvCrfS1k-unsplash.jpg);
     background-size: cover;
 }
 
 #header {
-    height: 300px;
+    height: 30vh;
+    width: auto;
     background-image: url(../img/rumman-amin-GA1g1FVzaes-unsplash.jpg);
     background-size: 100%;
     background-position: center;
 }
 
 #navigation {
-    height: 60px;
+    height: 6vh;
+    width: 75vw;
     background-color: #494439;
     color: rgb(84, 153, 28);
     border-bottom: 3px solid black;
@@ -45,13 +44,14 @@ body {
     border-right: 3px solid black;
     border-radius: 0px 0px 40px 40px;
     margin-bottom: 10px;
-    width: 1500px;
     margin-left: auto;
     margin-right: auto;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 0.1vw;
 }
 
 .navigation_bar {
-    float: left;
     margin-left: 7.5%;
     margin-right: 7.5%;
     padding-top: 17px;
@@ -61,7 +61,8 @@ body {
     background-image: url(../img/italy_flag.jpg);
     background-position: center;
     background-size: cover;
-    height: 100px;
+    height: 10vh;
+    text-align: center;
 }
 
 #flex-container {
@@ -73,6 +74,7 @@ body {
 .grid-container {
     background-color: #494439;
     text-align: center;
+    justify-content: center;
     display: grid;
     grid-template-areas:
         'header1 header1'
