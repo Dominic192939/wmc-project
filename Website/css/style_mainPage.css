@@ -19,6 +19,11 @@ h1 {
     h1 {
         font-size: 1.5rem;
     }
+
+    #header{
+        height: 10vh;
+        width: auto;
+    }
 }
 
 h2 {
@@ -37,7 +42,7 @@ body {
 }
 
 #header {
-    height: 300px;
+    height: 33vh;
     background-image: url(../img/rumman-amin-GA1g1FVzaes-unsplash.jpg);
     background-size: 100%;
     background-position: center;

@@ -1,23 +1,23 @@
-* {
+body, html{
+    height: 100%;
     margin: 0;
+    box-sizing: border-box;
 }
 
 a {
     color: inherit;
 }
 
+p {
+    color: #e9ecea;
+}
+
 h1 {
     font-size: 3.8rem;
     color: rgb(84, 153, 28);
+    margin: 0;
 }
 
-h2 {
-    float: left;
-    width: 400px;
-    padding-left: 10%;
-    color: #e9ecea;
-    padding-bottom: 1%;
-}
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -27,7 +27,7 @@ body {
 }
 
 #header {
-    height: 30vh;
+    height: 33%;
     width: auto;
     background-image: url(../img/rumman-amin-GA1g1FVzaes-unsplash.jpg);
     background-size: 100%;
@@ -35,52 +35,51 @@ body {
 }
 
 #navigation {
-    height: 6vh;
-    width: 75vw;
+    width: 78%;
+    height: 6%;
     background-color: #494439;
-    color: rgb(84, 153, 28);
     border-bottom: 3px solid black;
     border-left: 3px solid black;
     border-right: 3px solid black;
     border-radius: 0px 0px 40px 40px;
-    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     display:grid;
     grid-template-columns: auto auto auto auto auto;
-    gap: 0.1vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 14%;
 }
 
-.navigation_bar {
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    padding-top: 17px;
+.navigation_item{
+    margin: 0;
+    color: rgb(84, 153, 28);
 }
+
 
 #italy_flag {
     background-image: url(../img/italy_flag.jpg);
     background-position: center;
     background-size: cover;
-    height: 10vh;
+    height: 10%;
+    display:flex;
     text-align: center;
-}
-
-#flex-container {
-    display: flex;
-    height: auto;
-    width: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid-container {
-    background-color: #494439;
-    text-align: center;
-    justify-content: center;
     display: grid;
     grid-template-areas:
         'header1 header1'
         'text1 picture1';
-    gap: 10px;
-    padding: 10px;
+    width: 50%;
+    column-gap: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 0.8%;
 }
 
 .item1 {
@@ -91,6 +90,10 @@ body {
 }
 .item3 {
     grid-area: picture1;
+}
+
+.item1, .item2, .item3{
+    background-color: #494439;
 }
 
 #footer {
