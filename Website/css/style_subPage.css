@@ -158,23 +158,32 @@ body {
 .item4:hover,
 .item5:hover,
 .item6:hover,
-.item7:hover,
-.item8:hover {
+.item7:hover {
     transform: scale(1.05);
     opacity: 1;
 }
 
+.item8:hover {
+    transform:scale(1.025);
+    opacity: 1;
+}
 
-.responsive-image {
+
+.responsive-image, .responsive-image_large {
     width: 100%;
     height: auto;
     border-radius: 15px;
     transition: transform 500ms;
 }
 
-.responsive-image:hover, .responsive-image_large:hover {
+.responsive-image:hover {
     transform: scale(1.035);
 }
+
+.responsive-image_large:hover {
+    transform: scale(1.015);
+}
+
 
 .comment-box {
     background-color: #494439;
