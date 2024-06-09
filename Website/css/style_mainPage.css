@@ -14,18 +14,6 @@ h1 {
     color: rgb(84, 153, 28);
 }
 
-@media screen and (max-width:1000px)
-{
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    #header{
-        height: 10vh;
-        width: auto;
-    }
-}
-
 h2 {
     float: left;
     width: 400px;
@@ -130,4 +118,16 @@ body {
 #video {
     margin-left: 25%;
     margin-bottom: 5px;
+}
+
+@media screen and (max-width:1000px)
+{
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #header{
+        height: 10vh;
+        width: auto;
+    }
 }
