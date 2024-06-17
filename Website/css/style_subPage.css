@@ -29,7 +29,7 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2rem;
     background-image: url(../img/jack-ward-rknrvCrfS1k-unsplash.jpg);
-    background-size:auto;
+    background-size: auto;
 }
 
 #header {
@@ -165,12 +165,12 @@ body {
 }
 
 .item8:hover {
-    transform:scale(1.025);
+    transform: scale(1.025);
     opacity: 1;
 }
 
-
-.responsive-image, .responsive-image_large {
+.responsive-image,
+.responsive-image_large {
     width: 100%;
     height: auto;
     border-radius: 15px;
@@ -222,6 +222,79 @@ body {
 .comment-box button:hover {
     background-color: #366b20;
     transform: scale(1.05);
+}
+
+/* TimmelsJoch GRID*/
+.grid-container-timmelsjoch {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-block,
+.image-block {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.text-block.visible,
+.image-block.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-block {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.image-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom grid layout for the TimmelsJoch page */
+#text1 {
+    grid-column: 1 / span 7;
+    grid-row: 1;
+}
+
+#picture1 {
+    grid-column: 8 / span 5;
+    grid-row: 1;
+}
+
+#picture2 {
+    grid-column: 1 / span 5;
+    grid-row: 2;
+    z-index: 1;
+}
+
+#text2 {
+    grid-column: 6 / span 7;
+    grid-row: 2;
+    z-index: 2;
+}
+
+#text3 {
+    grid-column: 1 / span 7;
+    grid-row: 3;
+}
+
+#picture3 {
+    grid-column: 8 / span 5;
+    grid-row: 3;
 }
 
 /* Gallery Styles */
@@ -377,6 +450,34 @@ body {
     h1 {
         font-size: 3rem;
     }
+
+    .grid-container-timmelsjoch {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    #text1 {
+        grid-column: 1 / span 6;
+    }
+
+    #picture1 {
+        grid-column: 1 / span 6;
+    }
+
+    #picture2 {
+        grid-column: 1 / span 3;
+    }
+
+    #text2 {
+        grid-column: 4 / span 3;
+    }
+
+    #text3 {
+        grid-column: 1 / span 6;
+    }
+
+    #picture3 {
+        grid-column: 1 / span 6;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -414,6 +515,23 @@ body {
     .footer_content {
         flex: auto;
     }
+
+    .grid-container-timmelsjoch {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #text1,
+    #picture1,
+    #picture2,
+    #text2,
+    #text3,
+    #picture3 {
+        grid-column: 1 / span 4;
+    }
+
+    #picture2 {
+        transform: translateY(0);
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -440,10 +558,6 @@ body {
         gap: 5px;
     }
 
-    .comment-box {
-        width: 100%;
-    }
-
     #footer {
         width: 100%;
         height: auto;
@@ -451,5 +565,74 @@ body {
 
     .footer_content {
         flex: auto;
+    }
+
+    .grid-container-timmelsjoch {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #text1,
+    #picture1,
+    #picture2,
+    #text2,
+    #text3,
+    #picture3 {
+        grid-column: 1 / span 2;
+    }
+
+    #picture2 {
+        transform: translateY(0);
+    }
+
+    .comment-box {
+        margin: 0px;
+        width: 95%;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #f8f9fa;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .grid-container-timmelsjoch .text-block,
+    .grid-container-timmelsjoch .image-block {
+        animation: fadeInUp 0.5s ease-out forwards;
+    }
+
+    .grid-container-timmelsjoch .text-block:nth-child(1),
+    .grid-container-timmelsjoch .image-block:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .grid-container-timmelsjoch .text-block:nth-child(2),
+    .grid-container-timmelsjoch .image-block:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .grid-container-timmelsjoch .text-block:nth-child(3),
+    .grid-container-timmelsjoch .image-block:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    .grid-container-timmelsjoch .text-block:nth-child(4),
+    .grid-container-timmelsjoch .image-block:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+    .grid-container-timmelsjoch .text-block:nth-child(5),
+    .grid-container-timmelsjoch .image-block:nth-child(5) {
+        animation-delay: 0.5s;
     }
 }
