@@ -32,6 +32,12 @@ body {
     background-size: auto;
 }
 
+
+
+/* ========================
+   Header and Italy flag
+======================== */
+
 #header {
     height: 33%;
     width: auto;
@@ -40,7 +46,23 @@ body {
     background-position: center;
 }
 
-/* Navigation styling */
+#italy_flag {
+    background-image: url(../img/italy_flag.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 10%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* ========================
+   Navigation Styling
+======================== */
+
 #navigation {
     width: 78%;
     height: 6%;
@@ -62,7 +84,13 @@ body {
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-/* Navigation fade-in effect on page load */
+
+
+/* ========================
+    Navigation fade-in effect
+    on page load
+======================== */
+
 body.loaded #navigation {
     opacity: 1;
     transform: translateY(0);
@@ -96,18 +124,13 @@ body.loaded #navigation {
     width: 100%;
 }
 
-#italy_flag {
-    background-image: url(../img/italy_flag.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 10%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
 
-/* Grid container styling - Stilfser Joch*/
+
+/* ========================
+   Grid container -
+   Stilfser Joch
+======================== */
+
 .grid-container {
     display: grid;
     grid-template-areas:
@@ -218,7 +241,11 @@ body.loaded #navigation {
     transform: scale(1.015);
 }
 
-/* COMMENT BOX */
+
+
+/* ========================
+   Comment box Styling
+======================== */
 
 .comment-box {
     background-color: #494439;
@@ -258,7 +285,13 @@ body.loaded #navigation {
     transform: scale(1.05);
 }
 
-/* TimmelsJoch GRID*/
+
+
+/* ========================
+   Grid container -
+   Timmelsjoch
+======================== */
+
 .grid-container-timmelsjoch {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -302,7 +335,6 @@ body.loaded #navigation {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Custom grid layout for the TimmelsJoch page */
 #text1 {
     grid-column: 1 / span 7;
     grid-row: 1;
@@ -336,7 +368,11 @@ body.loaded #navigation {
 }
 
 
-/* Gallery Styles */
+
+/* ========================
+   Gallery Styling
+======================== */
+
 .grid-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -372,7 +408,13 @@ body.loaded #navigation {
     transform: scale(1.1);
 }
 
-/* Modal Styles */
+
+
+/* ========================
+   Modal Styling for
+   Gallery
+======================== */
+
 .modal {
     display: none;
     position: fixed;
@@ -412,7 +454,11 @@ body.loaded #navigation {
 }
 
 
-/* Footer Styles */
+
+/* ========================
+   Footer Styling
+======================== */
+
 #footer {
     background-color: #494439;
     margin-left: auto;
@@ -452,15 +498,18 @@ body.loaded #navigation {
 
 
 
-/* Responsive Adjustments */
+/* ========================
+   Responsive Adjustmens
+======================== */
+
 @media screen and (max-width:1600px) {
     #navigation{
         gap: 12%;
     }    
 }
 
-@media screen and (max-width:1300px) {
-    #navgiation{
+@media screen and (max-width:1200px) {
+    #navigation{
         gap:10%;
     }    
 }
@@ -470,7 +519,7 @@ body.loaded #navigation {
         width: 100%;
         height: auto;
         grid-template-columns: repeat(3, auto);
-        gap: 5%;
+        gap: 8%;
     }
 
     .grid-container {
@@ -647,7 +696,10 @@ body.loaded #navigation {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    /* Animations */
+    /* ========================
+        Animation for
+        Timmelsjoch-Grid
+    ======================== */
     @keyframes fadeInUp {
         from {
             opacity: 0;
